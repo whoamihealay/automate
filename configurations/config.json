@@ -1,0 +1,12 @@
+{
+    "azure": {
+        "organization": ""
+    },
+    "window": {
+        "width": 1280,
+        "height": 720,
+        "webPreferences": {
+            "preload": null
+        }
+    }
+}
