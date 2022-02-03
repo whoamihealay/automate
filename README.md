@@ -1,5 +1,5 @@
 ## Getting Started
-
+Make sure that you have [Node.js](https://nodejs.org/en/) installed. The minimum required version is 14.
 
 ## Configuration
 There are three configuration requirements for running automate:
