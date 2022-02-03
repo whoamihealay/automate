@@ -1,3 +1,18 @@
+:root {
+  /* Base color palette */
+  --color-gunmetal: #1d252f;
+  --color-corn: #fff36e;
+  --color-cedar-chest: #db504a;
+  --color-ocean-green: #48bf84;
+  --color-carolina-blue: #00a8e8;
+  /* Highlight color palette */
+  --highlight-charcoal: #3e4759;
+  --highlight-green-yellow-crayola: #f8e98f;
+  --highlight-candy-pink: #db716d;
+  --highlight-pale-ocean-green: #76bd96;
+  --highlight-pale-ocean-green: #36aae0;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,3 +23,41 @@
     overflow: hidden;
     background-color: #1e1f26;
   }
+
+/* Text Classes */
+.text-corn {
+  color: var(--color-corn)
+}
+
+.text-cedar-chest {
+  color: var(--color-cedar-chest);
+}
+
+.text-ocean-green {
+  color: var(--color-ocean-green);
+}
+
+.text-carolina-blue {
+  color: var(--color-carolina-blue);
+}
+
+/* Backgrounds classes */
+.background-gunmetal {
+  background-color: var(--color-gunmetal);
+}
+
+.background-corn {
+  background-color: var(--color-corn);
+}
+
+.background-cedar-chest {
+  background-color: var(--color-cedar-chest);
+}
+
+.background-ocean-green {
+  background-color: var(--color-ocean-green);
+}
+
+.background-carolina-blue {
+  background-color: var(--color-carolina-blue);
+}
