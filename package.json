@@ -5,8 +5,8 @@
   "main": "app/main.js",
   "scripts": {
     "test": "test",
-    "start": "electron .",
-    "build": "tsc app/main.ts"
+    "build": "webpack --config ./webpack.config.js",
+    "start": "npm run build && electron ./app/main.js"
   },
   "author": "tacosontitan",
   "license": "ISC",
