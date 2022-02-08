@@ -6,7 +6,7 @@
   "scripts": {
     "test": "test",
     "build": "webpack --config ./webpack.config.js",
-    "start": "npm run build && electron ./app/main.js"
+    "start": "npm run build && electron ./dist/electron.js"
   },
   "author": "tacosontitan",
   "license": "ISC",

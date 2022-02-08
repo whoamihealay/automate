@@ -39,4 +39,4 @@ const loader = () => {
     </div>;
 };
 
-ReactDOM.render(<loader />, document.getElementById('app'));
+ReactDOM.render(<loader />, document.getElementById('loader'));
