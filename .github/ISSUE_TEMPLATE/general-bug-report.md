@@ -8,8 +8,8 @@ assignees: ''
 ---
 
 ## Prerequisites
-[ ] Checked for duplicate issues.
-[ ] Checked for duplicate pull requests.
+- [ ] Checked for duplicate issues.
+- [ ] Checked for duplicate pull requests.
 
 ## What's going on?
 We need as much detail as possible related to your issue. Start by answering the following questions:
