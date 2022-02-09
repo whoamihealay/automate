@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-const message = "A NEW HOPE FOR SOURCE CONTROL";
+const message = "NEXT LEVEL SOURCE CONTROL MANAGEMENT";
 const Loader = () => {
     let messageElements = [];
     for (let i = 0; i < message.length; i++) {
