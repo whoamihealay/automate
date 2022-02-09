@@ -1,10 +1,10 @@
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
-const configHandler = require('./handlers/configHandler.js');
+const configHandler = require('../app/handlers/configHandler.js');
 configHandler.initialize();
 function createWindow () {
   let windowConfig = configHandler.data.window;
-  windowConfig.webPreferences.preload = path.join(__dirname, 'preload.js');
+  windowConfig.webPreferences.preload = '../app/preload.js';
   const mainWindow = new BrowserWindow(windowConfig);
   if (configHandler.flux.window.startMaximized)
     mainWindow.maximize();

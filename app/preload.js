@@ -1,5 +1,7 @@
-const Toast = require('./models/bootstrap/toast');
-const repositoryHandler = require(`./handlers/repositoryHandler.js`);
+const Toast = require('../app/models/bootstrap/toast');
+const configHandler = require('../app/handlers/configHandler.js');
+configHandler.initialize();
+const repositoryHandler = require(`../app/handlers/repositoryHandler.js`);
 var loadingTaskElement = undefined;
 var toastContainerElement = undefined;
 function setTaskMessage(task) { loadingTaskElement.innerText = task; }

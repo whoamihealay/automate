@@ -1,0 +1,7 @@
+.btn-primary {
+    background-color: var(--color-carolina-blue) !important;
+    color: var(--text-light) !important;
+}
+.btn-primary:hover {
+    background-color: var(--highlight-cyan-process) !important;
+}

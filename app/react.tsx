@@ -6,7 +6,7 @@ const Loader = () => {
     let messageElements = [];
     for (let i = 0; i < message.length; i++) {
         let character = message.charAt(i);
-        messageElements.push(<span>{character}</span>)
+        messageElements.push(<span key={character + i}>{character}</span>)
     }
 
     return <div>

@@ -24,16 +24,20 @@
     <link rel="stylesheet" href="../app/styles/main.css">
     <link rel="stylesheet" href="../app/styles/loader.css">
     <link rel="stylesheet" href="../app/styles/toastContainer.css">
+    <link rel="stylesheet" href="../app/styles/bootstrap-overrides.css">
 </head>
 
 <body class="dark-theme">
+    <canvas class="background"></canvas>
     <div id='toast-container' class="toast-container"></div>
     <section class="loader">
         <div id="loader"></div>
-        <div id="signin-buttons"></div>
+        <div class="signin-buttons">
+            <button class="btn btn-primary">Sign in with GitHub</button>
+            <button class="btn btn-primary">Sign in with Microsoft</button>
+        </div>
         <i className="user-welcome">Welcome, <span id="username">nameless patron</span>!</i>
     </section>
-    <canvas class="background"></canvas>
     <script src="../bundles/particles.js"></script>
     <script src="../app/scripts/index.js"></script>
 </body>
