@@ -5,12 +5,16 @@
   --color-cedar-chest: #db504a;
   --color-ocean-green: #48bf84;
   --color-carolina-blue: #00a8e8;
+
   /* Highlight color palette */
   --highlight-charcoal: #3e4759;
   --highlight-green-yellow-crayola: #f8e98f;
   --highlight-candy-pink: #db716d;
   --highlight-pale-ocean-green: #76bd96;
-  --highlight-pale-ocean-green: #36aae0;
+  --highlight-cyan-process: #36aae0;
+
+  /* Dark theme palette */
+  --text-light: #faebd7;
 }
 
 * {
@@ -21,7 +25,6 @@
   body {
     font-family: "ROBOTO", sans-serif;
     overflow: hidden;
-    background-color: #1e1f26;
   }
 
 /* Text Classes */
@@ -60,4 +63,10 @@
 
 .background-carolina-blue {
   background-color: var(--color-carolina-blue);
+}
+
+/* Theme Classes */
+.dark-theme {
+  background-color: var(--color-gunmetal);
+  color: var(--text-light);
 }
