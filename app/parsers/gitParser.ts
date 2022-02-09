@@ -63,7 +63,7 @@ module.exports = {
         // Section headers are wrapped with square brackets (e.g. `[header]`).
         let sections = data.split('[');
         for (let section of sections) {
-            sectionData = parseSection(section);
+            let sectionData = parseSection(section);
             if (sectionData && sectionData.type)
             switch (sectionData.type) {
                 case 'remote': result.remotes.push(createRemote(sectionData)); break;
