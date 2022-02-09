@@ -9,7 +9,7 @@ function createWindow () {
   if (configHandler.flux.window.startMaximized)
     mainWindow.maximize();
 
-  mainWindow.loadFile('app/pages/index.html');
+  mainWindow.loadFile('index.html');
 }
 
 app.whenReady().then(() => {
