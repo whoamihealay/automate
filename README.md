@@ -1,5 +1,8 @@
 # automate
 Created with Electron JS and integrating with both Azure DevOps and GitHub, automate allows you to automate tasks such as changing branches across enterprise workspaces and solutions, tagging multiple repositories at the same time, and much more.
+
+ [![Screenshot of the landing page.](images/landing.png)]()
+
 ## Getting Started
 Make sure that you have [Node.js](https://nodejs.org/en/) installed. The minimum required version is 14.
 
