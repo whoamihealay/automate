@@ -20,10 +20,3 @@ The `flux.json` file is considered the primary configuraiton for running automat
 
 ### Secrets
 The `secrets.json` file is an empty shell representing all of the configurable secret data in the application. In order to use the application, you'll need to create a copy of this file named `secrets.dev.json` and populate it with your personal data.
-
-#### Azure - Personal Access Token
-The `azure.personalAccessToken` secret must be generated using Azure DevOps. To generate a token follow the [MSDN tutorial][pat] and provide the following scopes:
-
- [![Requied Scopes](images/azure.pat.png)]()
-
- [pat]: https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=preview-page
