@@ -6,7 +6,7 @@ const Loader = () => {
     let messageElements = [];
     for (let i = 0; i < message.length; i++) {
         let character = message.charAt(i);
-        messageElements.push(<span>{character === " " ? "&nbsp;" : character}</span>)
+        messageElements.push(<span className="m">{character}</span>)
     }
 
     return <div>
