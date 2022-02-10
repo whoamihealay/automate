@@ -4,6 +4,7 @@ const configHandler = require('../app/handlers/configHandler.js');
 configHandler.initialize();
 function createWindow () {
   let windowConfig = {
+    show: false,
     width: configHandler.settings.window.startup.width,
     height: configHandler.settings.window.startup.height,
     webPreferences: {
@@ -11,11 +12,11 @@ function createWindow () {
     }
   };
   const mainWindow = new BrowserWindow(windowConfig);
-
   if (configHandler.settings.window.startup.maximized)
     mainWindow.maximize();
 
   mainWindow.loadFile('index.html');
+  mainWindow.show();
 }
 
 app.whenReady().then(() => {
