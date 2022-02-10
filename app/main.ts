@@ -3,10 +3,16 @@ const path = require('path');
 const configHandler = require('../app/handlers/configHandler.js');
 configHandler.initialize();
 function createWindow () {
-  let windowConfig = configHandler.data.window;
-  windowConfig.webPreferences.preload = '../app/preload.js';
+  let windowConfig = {
+    width: configHandler.settings.window.startup.width,
+    height: configHandler.settings.window.startup.height,
+    webPreferences: {
+      preload: "../app/preload.js"
+    }
+  };
   const mainWindow = new BrowserWindow(windowConfig);
-  if (configHandler.flux.window.startMaximized)
+
+  if (configHandler.settings.window.startup.maximized)
     mainWindow.maximize();
 
   mainWindow.loadFile('index.html');
