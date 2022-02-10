@@ -1,14 +1,19 @@
+const { app } = require('electron');
 const os = require('os');
 module.exports = {
     username: os.userInfo().username,
-    data: require(`../../configurations/config.json`),
-    flux: undefined,
+    settings: undefined,
+    secrets: require(`../../configurations/secrets.dev.json`),
     initialize: function () {
-        let flux = require(`../../configurations/flux.json`);
-        try {
-            flux = require(`../../configurations/flux.dev.json`);
-        } catch { console.warn("Unable to load a deviated flux configuration. Starting with standardized values."); }
+        let data = require(`../../configurations/settings.json`);
 
-        this.flux = flux;
+        // Only attempt to load deviations in development.
+        if (!app.isPackaged) {
+            try {
+                data = require(`../../configurations/settings.dev.json`);
+            } catch { console.warn("Unable to load a deviated configuration. Starting with standardized values."); }
+        }
+
+        this.settings = data;
     }
 };
