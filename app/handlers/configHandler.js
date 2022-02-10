@@ -1,14 +1,14 @@
 const os = require('os');
 module.exports = {
     username: os.userInfo().username,
-    data: require(`../../configurations/config.json`),
-    flux: undefined,
+    data: undefined,
+    secrets: require(`../../configurations/secrets.dev.json`),
     initialize: function () {
-        let flux = require(`../../configurations/flux.json`);
+        let settings = require(`../../configurations/settings.json`);
         try {
-            flux = require(`../../configurations/flux.dev.json`);
-        } catch { console.warn("Unable to load a deviated flux configuration. Starting with standardized values."); }
+            settings = require(`../../configurations/settings.dev.json`);
+        } catch { console.warn("Unable to load a deviated configuration. Starting with standardized values."); }
 
-        this.flux = flux;
+        this.data = settings;
     }
 };
