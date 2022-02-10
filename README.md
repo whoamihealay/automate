@@ -38,7 +38,7 @@ There are three configuration requirements for running automate:
 ### Flux Data
 The `flux.json` file is considered the primary configuration for running automate in a standardized environment. In order to override the data in this configuration file, simply create a file in the same directory named `flux.dev.json` and override the existing values. The `flux.dev.json` file is ignored using the `.gitignore` file, so it won't be commited to source control at any point.
 
-<sub>Contrary to popular belief, `flux.dev.json` isn't representing a developer file, it's representing a deviation for the `flux` data.</sub>
+<sub>Contrary to popular belief, `flux.dev.json` doesn't represent a developer file, it represents a deviation for the `flux` data.</sub>
 
 ### Secrets
 The `secrets.json` file is an empty shell representing all of the configurable secret data in the application. In order to use the application, you'll need to create a copy of this file named `secrets.dev.json` and populate it with your personal data.
