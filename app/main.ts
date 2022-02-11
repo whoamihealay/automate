@@ -1,6 +1,7 @@
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
 const configHandler = require('../app/handlers/configHandler.js');
+const taskbarProgressBar = require('./scripts/utilities')
 configHandler.initialize();
 function createWindow () {
   let windowConfig = {
@@ -17,6 +18,13 @@ function createWindow () {
 
   mainWindow.loadFile('index.html');
   mainWindow.show();
+
+  let progress = 0
+  const progressInterval = setInterval(() => {
+    progress += .02
+
+    mainWindow.setProgressBar(.5)
+  }, 120)
 }
 
 app.whenReady().then(() => {
