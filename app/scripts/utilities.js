@@ -12,3 +12,9 @@ export function taskbarProgressBar (window, setProgress) {
     window.setProgressBar(progress)  
   }, 120)
 }
+
+const { Notification } = require('electron')
+
+export function showNotification (title, body) {
+    new Notification({ title: title, body: body }).show() 
+  }
